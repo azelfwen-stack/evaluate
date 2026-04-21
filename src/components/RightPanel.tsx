@@ -236,10 +236,10 @@ export const RightPanel: React.FC<RightPanelProps> = ({
     const seed = selectedNode.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
     
     const sources = [
-      { name: '评价产生', value: (seed % 40) + 10, itemStyle: { color: '#3b82f6' } },
-      { name: '课堂评价', value: ((seed * 2) % 30) + 5, itemStyle: { color: '#8b5cf6' } },
-      { name: '表单导入', value: ((seed * 3) % 20) + 5, itemStyle: { color: '#10b981' } },
-      { name: '积分卡', value: ((seed * 5) % 15) + 2, itemStyle: { color: '#f59e0b' } },
+      { name: '学生自主上传', value: (seed % 40) + 10, itemStyle: { color: '#3b82f6' } },
+      { name: '课堂教师评价', value: ((seed * 2) % 30) + 5, itemStyle: { color: '#8b5cf6' } },
+      { name: '学生互评', value: ((seed * 3) % 20) + 5, itemStyle: { color: '#10b981' } },
+      { name: '第三方数据', value: ((seed * 5) % 15) + 2, itemStyle: { color: '#f59e0b' } },
     ];
 
     return {
